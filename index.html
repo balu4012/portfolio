@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-photo.png.jpg" alt="Bala Krishna" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Bala Krishna">Bala Krishna</h1>
+
+          <p class="title">DevOps Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:baluro93@gmail.com" class="contact-link">baluro93@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+91 9491886993" class="contact-link">+91 9491886993</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="1982-06-23">June 22, 2005</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Bhimavaram,Andhra Pradesh,INDIA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/bala-krishna-royall" target="_blank" rel="noopener noreferrer" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/royall_balu" target="_blank" rel="noopener noreferrer" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/b_a_l_u_0_0?igsh=YWZuNWxrbHd3MG5j" target="_blank" rel="noopener noreferrer" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/balu4012" target="_blank" rel="noopener noreferrer" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button type="button" class="navbar-link active" data-nav-link data-target="about">About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button type="button" class="navbar-link" data-nav-link data-target="resume">Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button type="button" class="navbar-link" data-nav-link data-target="skills">Skills</button>
+          </li>
+
+          <li class="navbar-item">
+            <button type="button" class="navbar-link" data-nav-link data-target="contact">Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <section class="hero-card" aria-label="Introduction">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Hello, I am</p>
+          <h2 class="hero-name">Bala Krishna</h2>
+          <p class="hero-role">DevOps Engineer</p>
+          <p class="hero-text">Final-year B.Tech CSE student from Andhra Pradesh, building hands-on DevOps skills with Linux (RHEL), Docker, and AWS. Passionate about automation and infrastructure.</p>
+          <a href="./assets/Resume.pdf" class="hero-btn" download="Bala-Krishna-Resume.pdf">Download Resume</a>
+        </div>
+      </section>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article id="about" class="about" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I’m a final-year B.Tech CSE student from Andhra Pradesh, currently building practical DevOps skills through hands-on learning in Linux, Docker, AWS, and automation.
+            I enjoy working on real infrastructure problems, simplifying complex setups, and making systems more reliable and efficient.
+          </p>
+
+          <p>
+            My focus is on understanding deployment workflows, improving automation practices, and learning how modern cloud-based environments are managed in real-world projects.
+            I’m especially interested in infrastructure, containers, and creating simple, scalable solutions for everyday DevOps tasks.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="Linux and infrastructure icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Linux &amp; Infrastructure</h4>
+
+                <p class="service-item-text">
+                  Working with Linux environments, system administration tasks, and infrastructure basics to build a strong foundation.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Cloud and automation icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud &amp; Automation</h4>
+
+                <p class="service-item-text">
+                  Exploring AWS services and automation practices to simplify deployments and repetitive infrastructure tasks.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="Docker icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Docker &amp; Containers</h4>
+
+                <p class="service-item-text">
+                  Learning containerization and building reproducible environments for modern applications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="CI/CD icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">CI/CD &amp; Deployment</h4>
+
+                <p class="service-item-text">
+                  Building familiarity with deployment pipelines and workflows that improve consistency across environments.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article id="resume" class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+          <a href="./assets/Resume.pdf" download="Bala-Krishna-Resume.pdf" class="download-btn">
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Download Resume</span>
+          </a>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bachelor of Technology in Computer Science and Engineering</h4>
+
+              <span>2024 — 2027</span>
+
+              <p class="timeline-text">        
+               Currently pursuing my bachelor's degree in Computer Science at DNR collage of engineering and technology(JNTUK),Andhra pradesh,INDIA.   
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Diploma in Electronics and Communication Engineering</h4>
+
+              <span>2021 — 2024</span>
+
+              <p class="timeline-text">
+                Had done my diploma in Electronics and communication engineering from Smt.B.Seetha polytechnic,Andhra pradesh,INDIA.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High school</h4>
+
+              <span>2021</span>
+
+              <p class="timeline-text">
+               i have completed my high school from Wonder kids school,Andhra pradesh,INDIA.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Industrial Trainee – Quality & Embedded Systems</h4>
+
+              <span>Jun 2023 – Nov 2023</span>
+
+              <p class="timeline-text">
+                Resolute TM Group | Skyquad Electronics & Appliances Pvt. Ltd. Bhimavaram, AP
+              </p>
+
+              <ul class="timeline-text" style="margin-top: 8px; padding-left: 18px; list-style: disc;">
+                <li>Monitored and analyzed smartwatch heartbeat sensor data, achieving improved measurement accuracy by identifying and resolving data anomalies across 50+ test cycles.</li>
+                <li>Detected and resolved 5+ firmware bugs in wearable devices by collaborating with the development team, reducing device failure rate during quality testing.</li>
+                <li>Executed functional and regression tests on embedded modules, documenting findings to streamline the QA process by 20%.</li>
+                <li>Gained practical exposure to embedded C programming, sensor integration, and hardware-software debugging in a production environment.</li>
+              </ul>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+
+
+      <!--
+        - #SKILLS
+      -->
+
+      <article id="skills" class="skills" data-page="skills">
+
+        <header>
+          <h2 class="h2 article-title">Skills</h2>
+        </header>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Technical Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">🐧 Linux &amp; System Administration</h5>
+              </div>
+
+              <ul class="timeline-text" style="margin-top: 8px; padding-left: 18px; list-style: disc;">
+                <li>Linux CLI (RHEL/CentOS/Ubuntu) — file system, permissions, process management</li>
+                <li>User &amp; group management, sudo configuration</li>
+                <li>Shell scripting (Bash)</li>
+                <li>Package management (dnf/yum/apt)</li>
+                <li>systemd, services &amp; daemon management</li>
+                <li>Log analysis &amp; monitoring (journalctl, /var/log)</li>
+              </ul>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">🌐 Full Stack Web Development</h5>
+              </div>
+
+              <ul class="timeline-text" style="margin-top: 8px; padding-left: 18px; list-style: disc;">
+                <li>Frontend: HTML, CSS, JavaScript, React.js</li>
+                <li>Backend: Node.js / Python (Flask or Django)</li>
+                <li>REST API development &amp; integration</li>
+                <li>Database: MySQL / MongoDB</li>
+                <li>Version control: Git &amp; GitHub</li>
+              </ul>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">⚙️ DevOps (Learning)</h5>
+              </div>
+
+              <ul class="timeline-text" style="margin-top: 8px; padding-left: 18px; list-style: disc;">
+                <li>Docker — containerization &amp; Docker Compose</li>
+                <li>CI/CD pipelines (Jenkins / GitHub Actions)</li>
+                <li>AWS basics (EC2, S3, IAM)</li>
+                <li>Infrastructure as Code — Terraform (beginner)</li>
+                <li>Configuration management — Ansible (beginner)</li>
+                <li>Kubernetes fundamentals</li>
+              </ul>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">🛠️ Tools &amp; Platforms</h5>
+              </div>
+
+              <ul class="timeline-text" style="margin-top: 8px; padding-left: 18px; list-style: disc;">
+                <li>VMware (lab environment setup)</li>
+                <li>VS Code, Vim/Nano</li>
+                <li>Postman (API testing)</li>
+                <li>Linux networking basics (SSH, firewall, ports)</li>
+              </ul>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Skills by Progress</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Linux</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Development</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">DevOps</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Tools &amp; Platforms</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article id="contact" class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <section class="contact-details">
+          <div class="contact-card">
+            <div class="contact-card-item">
+              <a href="tel:+919491886993" class="icon-box" aria-label="Call phone number">
+                <ion-icon name="call-outline"></ion-icon>
+              </a>
+              <div class="contact-content">
+                <h3 class="h3">Phone</h3>
+                <a href="tel:+919491886993" class="contact-link">+91 9491886993</a>
+                <p>Tap to call directly from mobile.</p>
+              </div>
+            </div>
+            <div class="contact-card-item">
+              <a href="mailto:baluro93@gmail.com" class="icon-box" aria-label="Send an email">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+              <div class="contact-content">
+                <h3 class="h3">Email</h3>
+                <a href="mailto:baluro93@gmail.com" class="contact-link">baluro93@gmail.com</a>
+                <p>Send me your project details by email.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mapbox" data-mapbox>
+          <iframe
+            src="https://www.google.com/maps?q=Bhimavaram%2C%20Andhra%20Pradesh%2C%20India&z=13&output=embed"
+            loading="lazy"
+            title="Bhimavaram location"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen=""
+            aria-label="Map showing Bhimavaram location"></iframe>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+            <p data-form-status aria-live="polite" style="margin-top: 0.8rem; font-size: 0.95rem; min-height: 1.2rem;"></p>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
