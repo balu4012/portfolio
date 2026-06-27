@@ -1,44 +1,61 @@
-# vCard - Personal portfolio
+# 🚀 Bala Krishna – Personal Portfolio
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+A personal portfolio website showcasing my skills, experience, and projects as a DevOps Engineer and Full Stack Developer.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+🔗 **Live Site:** https://balu4012.github.io/portfolio
 
-## Demo
-
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
-
-## Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-## Installing vCard
-
-To install **vCard**, follow these steps:
-
-Linux and macOS:
+## 📥 Clone & Run Locally
 
 ```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+git clone https://github.com/balu4012/portfolio.git
+cd portfolio
 
-Windows:
+## 👨‍💻 About Me
 
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+Final-year B.Tech CSE student from Andhra Pradesh, India.
+Building hands-on DevOps skills with Linux (RHEL), Docker, and AWS.
+Passionate about automation, infrastructure, and web development.
 
-## Contact
+---
 
-If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
+## 🛠️ Built With
 
-## License
+- HTML5
+- CSS3
+- JavaScript
+- EmailJS (contact form)
+- Ionicons (icons)
+- Google Fonts (Poppins)
 
-MIT
+---
+
+## 📌 Features
+
+- Smooth single-page scrolling
+- Responsive design
+- Working contact form (EmailJS)
+- Skills with progress bars
+- Resume download
+- Google Maps location embed
+
+---
+
+## 📂 Sections
+
+- About
+- Resume
+- Skills
+- Portfolio
+- Contact
+
+---
+
+## 📬 Contact
+
+- 📧 Email: baluro93@gmail.com
+- 💼 GitHub: github.com/balu4012
+- 🐦 Twitter: x.com/royall_balu
+
+---
+
+⭐ If you like this portfolio, give it a star!
